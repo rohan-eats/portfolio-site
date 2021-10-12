@@ -14,6 +14,7 @@ import FeatureSlides from "../components/FeatureSlides";
 import Footer from '../Footer';
 
 import "../styles/home.scss";
+import Testimonials from '../components/Testimonials';
 
 export default function Index() {
 
@@ -45,6 +46,7 @@ export default function Index() {
           <Hero />
           <About />
           <FeatureSlides />
+          <Testimonials />
           <Contact />
           <Footer />
         </div>

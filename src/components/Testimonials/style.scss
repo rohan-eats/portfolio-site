@@ -1,0 +1,67 @@
+@import "../../styles/var.scss";
+
+
+.content {
+    min-height: 50vh;
+}
+
+.quote-container {
+    min-height: 200px;
+    color: #000000;
+    position: relative;
+
+    &:hover {
+        cursor: grab;
+    }
+
+
+    .quote {
+        position: relative;
+        padding: 4rem 6rem;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+
+        font-size: 2.2rem;
+        line-height: 1.4;
+
+        @media screen and (max-width: $medium) {
+            font-size: 2.08vh;
+            padding: 3rem;
+
+        }
+
+        &:hover {
+            cursor: grab;
+        }
+
+        p {
+            position: relative;
+            margin-bottom: 20px;
+
+            &::before {
+                content: '\201C';
+                color: rgba(99, 99, 99, 0.44);
+                font-size: 6.2em;
+                font-weight: 700;
+                opacity: 1;
+                position: absolute;
+                top: -.4em;
+                left: -.2em;
+                text-shadow: none;
+                z-index: -10;
+            }
+        }
+
+        cite {
+            display: block;
+            text-align: right;
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem;
+
+            span {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
