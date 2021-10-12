@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Seo from '../components/seo';
 import Hero from '../components/Hero/Hero';
 import About from '../components/About/About'
+import Contact from '../components/Contact';
 import FeatureSlides from "../components/FeatureSlides";
 import Footer from '../Footer';
 
@@ -44,6 +45,7 @@ export default function Index() {
           <Hero />
           <About />
           <FeatureSlides />
+          <Contact />
           <Footer />
         </div>
 

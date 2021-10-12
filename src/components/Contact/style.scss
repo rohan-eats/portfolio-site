@@ -1,0 +1,157 @@
+// .lineParent {
+//     overflow: hidden;
+
+//     .lineChildren {
+//         transform: translate(0, 500px);
+//     }
+// }
+
+@import "../../styles/var.scss";
+
+
+
+.get-in-touch-container {
+
+
+    background-color: #222222;
+    color: #fff;
+    margin: auto 0;
+
+    h2 {
+        font-size: 2.5em;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .get-in-touch {
+
+        opacity: 0;
+        width: 80%;
+        margin: 0 auto;
+
+        .input-field {
+            font-size: 2rem;
+            color: $primary-color;
+            width: 100%;
+            border: 0;
+            background-color: transparent;
+            padding: 1.5rem 0 10px 1rem;
+            border-bottom: 1px solid #eee;
+
+            @media screen and (max-width: $medium) {
+                font-size: 1.3rem;
+            }
+
+            &:focus {
+                border-bottom-color: $primary-color;
+            }
+
+            &::placeholder {
+
+                font-family: 'Caveat', cursive;
+            }
+        }
+
+
+
+        // button {
+        //     margin: 2rem 0;
+        //     border: none;
+        //     outline: none;
+        //     background-color: black;
+        //     color: white;
+        //     font-size: 1.5rem;
+        //     padding: 1rem 2rem;
+
+        // }
+
+        button {
+            margin: 2rem 0;
+
+            border: 1px solid #111;
+            padding: 20px;
+            background: #111;
+            text-transform: uppercase;
+            color: white;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            letter-spacing: 3px;
+
+            &:hover {
+                background-color: white;
+                color: #111;
+            }
+
+            @media screen and (max-width: $medium) {
+                font-size: 0.8rem;
+            }
+        }
+
+        &.is-reveal {
+            opacity: 1;
+        }
+    }
+}
+
+.contact-info-container {
+    max-width: 100%;
+    overflow: hidden;
+
+    div {
+        display: inline-block;
+        white-space: nowrap;
+        padding: 1.6rem 2rem;
+
+        div {
+            font-size: 3.5rem;
+            display: inline-block;
+
+            p {
+                color: #626262;
+                font-family: 'Caveat', cursive;
+                font-size: 1.2rem;
+                letter-spacing: 20px;
+            }
+
+            p:nth-child(0) {
+                text-align: left;
+
+            }
+
+            p:nth-child(1) {
+                text-align: right;
+
+            }
+        }
+    }
+}
+
+.contact-container {
+
+    background-color: #222222;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+
+
+
+    @media screen and (max-width: $medium) {
+
+        grid-template-columns: 1fr;
+
+
+    }
+
+
+}
+
+
+.success-message {
+    font-size: 2rem;
+    text-align: center;
+    color: $primary-color;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 8px;
+
+}
