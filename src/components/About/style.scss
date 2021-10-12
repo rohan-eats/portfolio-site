@@ -1,0 +1,40 @@
+@import "../../styles/var.scss";
+
+
+.about-section {
+
+    position: relative;
+
+    &>div {
+        width: 90%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    p {
+        font-size: 3.33rem;
+        line-height: 1.3;
+        opacity: 0;
+
+        @media screen and (max-width: $medium) {
+            font-size: 2.2vh;
+        }
+
+        .highlight {
+            color: $primary-color;
+        }
+
+        >div {
+            opacity: 0;
+            transform: translateY(0px);
+        }
+
+        &.is-reveal {
+            opacity: 1;
+        }
+    }
+}

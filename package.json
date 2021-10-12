@@ -1,0 +1,46 @@
+{
+  "name": "hittites",
+  "version": "1.0.0",
+  "private": true,
+  "description": "hittites",
+  "author": "subhendu17620",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@formcarry/react": "^1.0.3",
+    "classnames": "^2.3.1",
+    "gatsby": "^3.11.0",
+    "gatsby-plugin-google-analytics": "^3.11.0",
+    "gatsby-plugin-image": "^1.11.0",
+    "gatsby-plugin-less": "^5.11.0",
+    "gatsby-plugin-manifest": "^3.11.0",
+    "gatsby-plugin-react-helmet": "^4.11.0",
+    "gatsby-plugin-sass": "^4.11.0",
+    "gatsby-plugin-sharp": "^3.11.0",
+    "gatsby-plugin-sitemap": "^4.7.0",
+    "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-transformer-sharp": "^3.11.0",
+    "google-map-react": "^2.1.10",
+    "gsap": "^3.7.1",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "locomotive-scroll": "^4.1.1",
+    "node-sass": "^6.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-loadable": "^5.5.0",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

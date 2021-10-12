@@ -1,0 +1,33 @@
+@import "../../styles/var.scss";
+
+.pin {
+    display: flex;
+    align-items: center;
+    width: 180px;
+
+    .pin-icon {
+        font-size: 2rem;
+        color: $primary-color;
+    }
+
+    .pin-text {
+        font-size: 1.3em;
+    }
+
+}
+
+
+
+
+
+
+// @media screen and (max-width: $medium) {
+
+//     .pin {
+//         width: 15vw;
+//     }
+
+//     .pin-icon {
+//         font-size: 10vw;
+//     }
+// }
