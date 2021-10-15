@@ -3,16 +3,6 @@ module.exports = {
     siteUrl: "https://hittites.com",
     title: "Hittites",
     description: ``,
-    author: `Subhendu Maji`,
-    siteTitle: '',
-    tagline: '',
-    siteDescription: '',
-    siteKeywords:
-      '',
-    siteLanguage: 'en_US',
-    name: '',
-    location: 'Bangalore, IN',
-
   },
   plugins: [
     "gatsby-plugin-sass",
