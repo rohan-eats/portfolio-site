@@ -49,45 +49,16 @@ export default function GetInTouch() {
         id: process.env.FORMCARRY_ID,
     });
 
-    // Success messages
-    if (state.submitted) {
-        return (
-            <p className="success-message">
-                Thank you! <br /> We received your query. Our Team will
-                contact you within 1-2 days.
-            </p>
-        );
-    }
+  
 
     return (
         <div className="get-in-touch-container" data-scroll-section>
 
-            <h2 className="get-in-touch-header">Get in Touch</h2>
-            <form
-                className={cn("get-in-touch", { "is-reveal": reveal })}
-                id="get-in-touch"
-                ref={ref}
-                autoComplete="off"
-                onSubmit={submit}
-            >
+        
 
-                <input type="text" className="input-field" placeholder="Full name" required autoComplete="off" />
-
-                <input type="text" className="input-field" placeholder="Contact number" required autoComplete="off" />
-
-
-
-
-                <input type="email" className="input-field" placeholder="Email" required autoComplete="off" />
-
-                <textarea className="input-field" required placeholder="Message" type="text" label="Message" name="Message" rows="4" />
-
-
-                <button type="submit">
+               <button type="submit">
                     {state.submitting ? <p>Sending... </p> : <p>Send</p>}
                 </button>
-
-            </form>
 
 
         </div>
