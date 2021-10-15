@@ -23,7 +23,7 @@ export default function Index() {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 500);
+    }, 800);
   }, []);
 
   useEffect(() => {

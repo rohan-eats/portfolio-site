@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
-@import "./var.scss";
-
-* {
-    font-family: "Merriweather", sans-serif;
-
-}
-
 body {
     font-family: "Merriweather", sans-serif;
     cursor: none;
@@ -19,11 +8,6 @@ body {
     -webkit-font-smoothing: antialiased;
 
     overflow-x: hidden;
-
-    &::-webkit-scrollbar {
-        width: 0.2em;
-    }
-
     &::-webkit-scrollbar-track {
         background-color: transparent;
     }
@@ -34,24 +18,10 @@ body {
 
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-input:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+input:-webkit-autofill{
     -webkit-text-fill-color: $primary-color;
     transition: background-color 5000s ease-in-out 0s;
 }
-
-
-// .main-container {
-//     // padding: 0 5vw;
-// }
-
 
 section {
     min-height: 100vh;
@@ -62,14 +32,4 @@ section {
     .section-header {
         margin-bottom: 50px;
     }
-}
-
-.absolute {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: black;
-    z-index: 1;
 }
